@@ -4,6 +4,7 @@ import DailyDevotional from "./components/DailyDevotional";
 import OtherDevotions from "./components/OtherDevotions";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+import './assets/styles/index.css'
 
 function App() {
   return (
