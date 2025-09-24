@@ -5,6 +5,7 @@ import OtherDevotions from "./components/OtherDevotions";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import './assets/styles/index.css'
+import './App.css'
 
 function App() {
   return (
