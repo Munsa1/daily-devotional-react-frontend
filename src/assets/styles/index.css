@@ -10,3 +10,72 @@
 body {
     background-color: #fffdfd;
 }
+
+/*Reusable Classes  #b3a9a9*/
+
+.hidden {
+    display: none;
+}
+.hovereffect:hover {
+    text-decoration: dotted;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-align {
+    align-items: center;
+}
+
+.app-margin {
+    margin: 0 16px;
+}
+
+.app-color-1 {
+    color: #af0f0f;
+}
+
+.app-color-text {
+    color: #0e0e0f;
+}
+
+.app-color-text-2 {
+    color: #122a57;
+}
+
+.white {
+    color: #fff;
+}
+
+.left-margin {
+    margin-left: 16px;
+}
+
+.left-margin-desk {
+    margin-left: 160px;
+}
+
+.right-margin {
+    margin-right: 16px;
+}
+
+.right-margin-desk {
+    margin-right: 160px;
+}
+
+.text-size {
+    font-size: 15px;
+}
+
+.b-margin {
+    margin-bottom: 190px;
+}
+
+.close-btn-style {
+    margin-left: 12px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/*Reusable Classes End*/
