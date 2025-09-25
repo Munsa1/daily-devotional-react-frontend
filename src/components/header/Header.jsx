@@ -1,6 +1,16 @@
 function Header(){
     return <header>
-        <h1>Welcome to My Website</h1>
+                {/* Start of Mobile Menu Design */}
+        <div class="mobile-nav-container">
+    <div className="mobile-view d-flex app-margin">
+      <a href="#">
+        <FontAwesomeIcon icon={faBars} />
+      </a>
+      <a href="#" id="openSearch">
+        <FontAwesomeIcon icon={faMagnifyingGlass} />
+      </a>
+    </div>
+        </div>
     </header>
 }
 
