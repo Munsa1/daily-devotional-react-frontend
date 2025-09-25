@@ -1,0 +1,17 @@
+.mobile-nav-container {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+.mobile-view {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mobile-view a {
+    font-size: 26px;
+    color: #122a57;
+}
