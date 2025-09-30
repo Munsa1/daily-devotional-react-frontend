@@ -1,0 +1,38 @@
+.devotionalText {
+  display: flex;
+  flex-direction: column;
+}
+
+.verse {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #b53838;
+  text-decoration: underline;
+}
+
+.verse a:hover {
+  color: #af0f0f;
+}
+
+.socials {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socials li a {
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.socials-header {
+  text-align: center;
+  margin-top: 16px;
+  font-style: oblique;
+  font-weight: 700;
+  margin-left: 130px;
+}
