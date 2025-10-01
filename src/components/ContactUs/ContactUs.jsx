@@ -59,7 +59,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="contact-us d-flex" id="contact">
+    <section classNamen="contact-us d-flex" id="contact">
       <h2 className="left-margin right-margin white">Contact Us</h2>
       <p className="left-margin right-margin white app-color-text-2">
         Feel free to get in touch with us! Whether you'd like to sign up for
