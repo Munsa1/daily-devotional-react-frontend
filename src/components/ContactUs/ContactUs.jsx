@@ -69,7 +69,7 @@ export default function ContactUs() {
         stay connected and let us support you in your spiritual journey.
       </p>
 
-      <div className="signup-form d-flex">
+      <div className={`${styles['signup-form']} d-flex`}>
         <form className="d-flex" onSubmit={handleSubmit} noValidate>
           <div>
             <input
