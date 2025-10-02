@@ -14,19 +14,19 @@ const OtherDevotions = () => {
             id: 1,
             title: "Faith Over Fear",
             text: "Trust in God’s plan, even when the path is unclear.",
-            image: "images/italy street.webp",
+            image: "../src/assets/images/italy-street.webp",
           },
           {
             id: 2,
             title: "Grace Renewed",
             text: "Each day is a new chance to walk in God’s grace.",
-            image: "../images/italy street.webp",
+            image: "../src/assets/images/italy-street.webp",
           },
           {
             id: 3,
             title: "Peace in Prayer",
             text: "Find rest for your soul through prayer and devotion.",
-            image: "images/italy street.webp",
+            image: "../src/assets/images/italy-street.webp",
           },
         ];
         // Pretend it takes time
