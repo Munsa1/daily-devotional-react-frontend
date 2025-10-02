@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./contacUs.module.css";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -59,7 +60,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section classNamen="contact-us d-flex" id="contact">
+    <section className={`${styles['contact-us']} d-flex`} id="contact">
       <h2 className="left-margin right-margin white">Contact Us</h2>
       <p className="left-margin right-margin white app-color-text-2">
         Feel free to get in touch with us! Whether you'd like to sign up for
