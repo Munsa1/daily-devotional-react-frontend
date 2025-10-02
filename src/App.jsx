@@ -1,8 +1,9 @@
 import ContactUs from './components/ContactUs/ContactUs'
 import Devotional from './components/Devotional/Devotional'
-import Header from './components/header/Header'
-import Hero from './components/hero/Hero'
-import OtherDevotions from './components/other devotions/OtherDevotions'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import Hero from './components/Hero/Hero'
+import OtherDevotions from './components/Other Devotions/OtherDevotions'
 import VerseOfTheDay from './components/VerseOfDay/VerseOfTheDay'
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <VerseOfTheDay />
     <ContactUs />
     <OtherDevotions />
+    <Footer />
     </>
   )
 }
