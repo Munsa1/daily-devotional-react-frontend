@@ -1,6 +1,13 @@
 // src/components/Footer.jsx
 import React from "react";
 import "./Footer.css"; // make sure you put your CSS into Footer.css
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -30,7 +37,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-facebook white"></i>
+                  <FontAwesomeIcon icon={faFacebook} className="white" />
                 </a>
               </li>
               <li>
@@ -39,7 +46,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-twitter white"></i>
+                  <FontAwesomeIcon icon={faTwitter} className="white" />
                 </a>
               </li>
               <li>
@@ -48,7 +55,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-youtube white"></i>
+                  <FontAwesomeIcon icon={faYoutube} className="white" />
                 </a>
               </li>
               <li>
@@ -57,7 +64,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-linkedin white"></i>
+                  <FontAwesomeIcon icon={faLinkedin} className="white" />
                 </a>
               </li>
             </ul>
