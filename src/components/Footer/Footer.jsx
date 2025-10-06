@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from "react";
-import "./Footer.css"; // make sure you put your CSS into Footer.css
+import styles from "./Footer.module.css"; // make sure you put your CSS into Footer.css
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -12,25 +12,24 @@ import {
 const Footer = () => {
   return (
     <footer id="aboutUs">
-      <div className="footer-container">
-        <div className="footer-wrap d-flex">
-          <div className="footer">
-            <a href="/" className="white left-margin church-name-footer">
+      <div className={styles["footer-container"]}>
+        <div className={`${styles['footer-wrap']} d-flex`}>
+          <div className={styles["footer"]}>
+            <a href="/" className={`${styles['church-name-footer']} white left-margin`}>
               Church Name
             </a>
-            <div className="accordion"></div>
-            <p className="footer-address left-margin white">
+            <p className={`${styles['footer-address']} white left-margin`}>
               5537, Luanginga Rd <br />
               Kalundu <br />
               Lusaka
             </p>
             <a
               href="tel:0966641813"
-              className="left-margin white footer-number footer-links"
+              className={`${styles['footer-number footer-links']} white left-margin`}
             >
               Call us on: 0966641813
             </a>
-            <ul className="footer-icons d-flex left-margin right-margin">
+            <ul className={`${styles['footer-icons']} d-flex left-margin`}>
               <li>
                 <a
                   href="https://web.facebook.com/munsa.mibenge.9/"
@@ -68,22 +67,22 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <p className="copyright-tag left-margin white right-margin">
+            <p className={`${styles['copyright-tag']} left-margin white right-margin`}>
               &copy; copyright 2024. All rights reserved{" "}
-              <a href="/" className="footer-links">
+              <a href="/" className={styles['footer-links']}>
                 www.churchname.com
               </a>
               . Church grants permission to print for personal use only. Be sure
               to take a look at our{" "}
-              <a href="#" className="footer-links">
+              <a href="#" className={styles['footer-links']}>
                 Terms of Use
               </a>{" "}
               and{" "}
-              <a href="#" className="footer-links">
+              <a href="#" className={styles['footer-links']}>
                 Privacy Policy
               </a>{" "}
               and{" "}
-              <a href="#" className="footer-links">
+              <a href="#" className={styles['footer-links']}>
                 Governance Information
               </a>
             </p>
