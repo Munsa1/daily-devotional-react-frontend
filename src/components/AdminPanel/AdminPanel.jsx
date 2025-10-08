@@ -72,26 +72,43 @@ const AdminPanel = () => {
   const [message, setMessage] = useState("");
 
   // Save devotional to localStorage
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (!verse || !devotional) {
-      setMessage("Please fill in both fields.");
-      return;
+  if (!verse || !devotional) {
+    setMessage("Please fill in both fields.");
+    return;
+  }
+
+  const newDevotional = {
+    verse,
+    devotional,
+    date: new Date().toISOString(),
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/devotion", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newDevotional),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to save devotional.");
     }
 
-    const newDevotional = {
-      verse,
-      devotional,
-      date: new Date().toLocaleDateString(),
-    };
-
-    // Save to localStorage
-    localStorage.setItem("currentDevotional", JSON.stringify(newDevotional));
-    setMessage("✅ Devotional saved successfully!");
+    const data = await response.json();
+    setMessage("✅ Devotional saved successfully to backend!");
     setVerse("");
     setDevotional("");
-  };
+  } catch (error) {
+    console.error(error);
+    setMessage("❌ Error saving devotional. Please try again.");
+  }
+};
+
 
   // Check existing devotional
   useEffect(() => {

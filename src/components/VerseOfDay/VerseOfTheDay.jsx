@@ -89,23 +89,25 @@ const VerseOfTheDay = () => {
   // }, []);
 
 useEffect(() => {
-  const saved = localStorage.getItem("currentDevotional");
-  if (saved) {
-    const parsed = JSON.parse(saved);
-    setVerse(parsed.verse);
-    setVerseText(parsed.devotional);
-    return; // Stop here if local data exists
-  }
-
-  // Otherwise, get verse from API
-  fetch("https://labs.bible.org/api/?passage=votd&type=json")
+  fetch("http://localhost:5000/devotion/latest")
     .then((res) => res.json())
     .then((data) => {
-      setVerse(`${data[0].bookname} ${data[0].chapter}:${data[0].verse}`);
-      setVerseText(data[0].text);
+      if (data && data.verse && data.message) {
+        setVerse(data.verse);
+        setVerseText(data.message);
+      } else {
+        // fallback if backend is empty
+        fetch("https://labs.bible.org/api/?passage=votd&type=json")
+          .then((res) => res.json())
+          .then((apiData) => {
+            setVerse(`${apiData[0].bookname} ${apiData[0].chapter}:${apiData[0].verse}`);
+            setVerseText(apiData[0].text);
+          });
+      }
     })
-    .catch((err) => console.error("Error fetching verse:", err));
+    .catch((err) => console.error("Error fetching devotional:", err));
 }, []);
+
 
   return (
     <div className={styles.verseBox}>
