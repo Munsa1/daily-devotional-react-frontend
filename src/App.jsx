@@ -1,3 +1,4 @@
+import AdminPanel from './components/AdminPanel/AdminPanel'
 import ContactUs from './components/ContactUs/ContactUs'
 import Devotional from './components/Devotional/Devotional'
 import Footer from './components/Footer/Footer'
@@ -12,6 +13,7 @@ function App() {
     <Hero />
     <Devotional />
     <VerseOfTheDay />
+    <AdminPanel />
     <ContactUs />
     <OtherDevotions />
     <Footer />
