@@ -56,7 +56,7 @@
     z-index: 5;
     animation: gb-popup-scale-blur 0.2s both;
   }
-  
+
 .mobile-nav-container {
     position: fixed;
     width: 100%;
@@ -73,6 +73,19 @@
 .mobile-view a i {
     font-size: 26px;
     color: #122a57;
+}
+
+.close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+}
+
+.close-btn-style {
+    margin-left: 12px;
+    color: #fff;
+    font-size: 25px;
 }
 
 /*End of Mobile Menu Styling*/
