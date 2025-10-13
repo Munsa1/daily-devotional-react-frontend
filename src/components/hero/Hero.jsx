@@ -1,4 +1,5 @@
 import mountains from "../../assets/images/Mountains.avif";
+import Shandi from "../../assets/audio/Shandi.mp3";
 import styles from './hero.module.css'
 
 const Hero = () => {
@@ -15,7 +16,7 @@ const Hero = () => {
       </span>
 
       <div className={styles["hero-audio"]}>
-        <audio src="" controls></audio>
+        <audio src={Shandi} controls></audio>
       </div>
     </section>
   );
