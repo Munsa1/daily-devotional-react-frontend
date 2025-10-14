@@ -58,6 +58,7 @@ const AdminPanel = () => {
       <textarea
         name="bodyText"
         placeholder="Body Text"
+        rows={5}
         value={formData.bodyText}
         onChange={handleChange}
         required
