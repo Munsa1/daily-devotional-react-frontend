@@ -56,8 +56,8 @@
 //   }, []);
 
 //   return (
-//     <div className={styles.adminPanel}>
-//       <h2>Add New Devotional</h2>
+//     <div className={styles.ad1inPanel}>
+//       <11Add New Devotional</1>
 //       <form onSubmit={handleSubmit} className={styles.form}>
 //         <label>Verse Reference (e.g., John 3:16)</label>
 //         <input
@@ -378,7 +378,7 @@
 
 
 
-
+import "./Admin.css"
 import { useState } from "react";
 
 const AdminPanel = () => {
@@ -416,8 +416,10 @@ const AdminPanel = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <form className="form-container" onSubmit={handleSubmit}>
+      <h1>Add A New Devotion</h1>
+      <div className="form">
+        <input
         type="text"
         name="title"
         placeholder="Title"
@@ -441,6 +443,7 @@ const AdminPanel = () => {
         required
       />
       <button type="submit">Save</button>
+      </div>    
     </form>
   );
 };
