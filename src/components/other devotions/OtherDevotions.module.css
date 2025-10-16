@@ -1,0 +1,62 @@
+/*Start of Other Devotions Section Styling*/
+
+.other-devotions {
+    flex-direction: column;
+    background-image: url('images/gray-abstract-wireframe-technology-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.other-devotions h2 {
+    margin: 0 16px;
+    color: #122a57;
+    margin-top: 60px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.underline-past-devotions {
+    width: 10%;
+}
+
+.devotions-card-holder, .devotions-card-container {
+    width: 100%;
+    flex-direction: column;
+}
+
+.devotions-card {
+    margin-bottom: 16px;
+    padding: 13px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.devotions-card img {
+    width: 50%;
+    height: 100%;
+}
+
+.card-text {
+    flex-direction: column;
+    margin: 4px  0;
+    margin-left: 20px;  
+}
+
+.other-devotions button {
+    margin: 0 22%;
+    padding: 8px;
+    color: #fff;
+    background-color: #122a57;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/*End of Other Devotions Section Styling*/

@@ -1,0 +1,48 @@
+.devotional {
+  /* Add section-level styling if needed */
+}
+
+.devotional-heading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.devotional h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 0;
+  margin-right: 100px;
+  line-height: 25px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.devotional p {
+  margin-right: 16px;
+  margin-bottom: 10px;
+}
+
+.devotional span {
+  font-size: 0.875rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.line-break::before {
+  height: 12px;
+  width: 100%;
+  background: linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(117deg, white 35%, transparent 25%),
+    linear-gradient(80deg, white 35%, transparent 25%);
+  background-color: #b42525;
+  display: block;
+  content: "";
+  background-size: 24px 21px;
+  background-repeat: repeat-x;
+}
+
+.line-break {
+  line-height: 10px;
+}

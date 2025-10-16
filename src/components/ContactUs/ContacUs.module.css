@@ -1,0 +1,61 @@
+/*Start of Contact us Styling*/
+
+.contact-us {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #122a57;
+}
+
+.contact-us img {
+    width: 30%;
+    margin: 0 40px;
+}
+
+.contact-us h2 {
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-us p {
+    text-align: center;
+    margin: 10px 38px;
+    line-height: 25px;
+}
+
+.signup-form {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 16px;
+}
+
+.signup-form form {
+    flex-direction: column;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 8px 8px;
+    font-size: 16px;
+    color: #053795;
+    font-weight: bolder;
+    outline: none;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 80px;
+    background-color: #fff;
+}
+
+/*End of Contact us Styling*/

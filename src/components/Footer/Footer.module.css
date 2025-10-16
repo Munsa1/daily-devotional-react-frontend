@@ -1,0 +1,54 @@
+/*Start of Footer Styling*/
+
+.footer-container {
+    background-color: #122a57;
+}
+
+.footer-wrap {
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.footer {
+    margin-top: 39px;
+}
+
+.church-name-footer {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-address {
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.footer-number {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.footer-icons {
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 54px;
+    margin-top: 10px;
+}
+
+.footer-icons li a {
+    font-size: 36px;
+}
+
+.copyright-tag {
+    font-size: 12px;
+    margin-top: 22px;
+    font-weight: 700;
+}
+
+.footer-links {
+    text-decoration: underline;
+}
+  /*End*/

@@ -1,0 +1,16 @@
+
+
+.socials {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.socials li a {
+    margin-right: 30px;
+    font-size: 30px;
+}
+

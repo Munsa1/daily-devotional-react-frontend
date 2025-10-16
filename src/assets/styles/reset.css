@@ -1,0 +1,58 @@
+/* reset.css */
+
+/* 1. Set box-sizing to border-box everywhere */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin/padding */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set sensible defaults */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* better text rendering */
+}
+
+/* 4. Make images scale properly */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Remove list styles */
+ul, ol {
+  list-style: none;
+  padding: 0;
+}

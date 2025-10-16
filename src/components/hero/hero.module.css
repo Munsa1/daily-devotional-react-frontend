@@ -1,0 +1,34 @@
+/*Hero Section Styling*/
+
+.hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-text {
+    font-style: oblique;
+    font-size: 10px;
+    text-align: right;
+}
+
+.hero-image {
+    margin: 10px 16px;
+    padding-top: 54px; 
+}
+
+.hero-image img {
+    width: 100%;
+
+}
+
+.hero-audio {
+
+}
+
+/*End of Hero Section Styling*/
